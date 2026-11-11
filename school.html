@@ -1,253 +1,734 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <meta name="description" content="">
-        <meta name="author" content="">
-        
-        <title>NeuroScope - School Setting</title>
-        <link rel="icon" type="image/x-icon" href="images/school.png">
-
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/main.css">
-
-        <!-- CSS -->        
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-
-        <link href="css/bootstrap-icons.css" rel="stylesheet">
-
-        <link href="css/main.css" rel="stylesheet">
-    </head>
-    <body>
-        <main>
-            <nav class="navbar navbar-expand-lg bg-light fixed-top shadow-lg">
-                <div class="container">
-                    <a class="navbar-brand mx-auto d-lg-none" href="index.html">
-                        NeuroScope
-                    </a>
-    
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-    
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav mx-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">Home</a>
-                            </li>
-    
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html">About</a>
-                            </li>
-    
-                            <li class="nav-item">
-                                <a class="nav-link" href="top5.html">Top 5 Things to Know</a>
-                            </li>
-    
-                            <a class="navbar-brand" href="index.html">
-                                NeuroScope
-                            </a>
-    
-                            <li class="nav-item">
-                                <a class="nav-link" href="terminology.html">General Terminology</a>
-                            </li>
-    
-                            <li class="nav-item">
-                                <a class="nav-link" href="conditions.html">Common Conditions</a>
-                            </li>
-    
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="hamburger-menu" onclick="toggleNav()">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </div>
-                  
-                <div id="verticalNav" class="vertical-nav">
-                    <a href="school.html" style="padding-left: 19px;">&nbsp;&nbsp;&nbsp;&nbsp;In the School<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Setting</a>
-                    <a href="hndp.html" style="padding-left: 80px;">&nbsp;&nbsp;&nbsp;&nbsp;Hear from Neurodivergent<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;People</a>
-                    <a href="factmyth.html" style="padding-left: 25px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fact, Myth <br>or Controversial</a>
-                    <a href="learnmore.html" style="padding-left: 20px;">Learn More</a>
-                    <a href="sources.html" style="padding-left: 20px;">Sources</a>
-                </div>
-            </nav>
-
-            <section id="introduction" class="conditions-section section-padding" style="padding-bottom: 5px;">
-                <h2 class="intro-itss">In the School Setting</h2>
-                <h2 class="intro-mcon">Main Categories of Neurodiversity</h2>
-                <p class="intro-tmc" style="margin-left: 100px;">There are two main categories of neurodiversity that have the biggest impact on education and the school environment.</p>
-            </section>
-    
-            <section id="learning-social">
-                <div class="heading-container">
-                    <h2 class="grid-item-1">Learning</h2>
-                    <h2 class="grid-item-2">Social</h2>
-                </div>
-                <div class="box-container">
-                    <a href="https://my.clevelandclinic.org/health/diseases/4865-learning-disabilities-what-you-need-to-know" target="_blank">
-                        <p class="school-box-1 grid-item">You'll often hear people referring to a condition as a "learning disability/difference". A person with a learning disability has certain neurological differences, due to which they are unable to access the limited education provided to all students without specific accommodations and/or specially designed instruction.</p>
-                    </a>
-                    <a href="https://www.brainfacts.org/thinking-sensing-and-behaving/diet-and-lifestyle/2023/social-neuroscience" target="_blank">
-                        <p class="school-box-2 grid-item">Human relationships, particularly in group settings, are very complex. Neurological differences can further shape how individuals process information like social cues, facial expressions or body language. These differences also influence communication styles and a person's capacity for emotional regulation.</p>
-                    </a>
-                </div>
-            </section>
-    
-            <section id="sped" style="padding-bottom: 50px;">
-                <h2 class="sped";>Special Education (SPED)</h2>
-                <p class="sped-intro";>
-                    Special Education is the range of services provided to students with disabilities that would otherwise impair their ability to learn. It can take place in either a regular or separated classroom but is not a "one size fits all" program. Students who qualify for SPED have an IEP.
-                </p>
-                <div class="flex-container">
-                    <div class="flex-item">
-                        <h3>504 Plan (Named after Section 504 of the Rehabilitation Act)</h3>
-                        <ul>
-                            <li>A legally binding document outlining accommodations that a student will receive in general education settings.</li>
-                            <li>Always integrated.</li>
-                            <li>Reviewed annually.</li>
-                        </ul>
-                    </div>
-                    <div class="flex-item">
-                        <h3 class="flex-item">IEP (Individualized Education Program)</h3>
-                        <ul>
-                            <li>A legally binding document outlining the student's educational goals and special service they will receive to achieve those goals.</li>
-                            <li>Students with IEP’s can be either separated or integrated into regular classrooms.</li>
-                            <li>Reviewed and updated annually by a team of people including the student, parents, teachers, etc.</li>
-                            <li>If a parent feels that their child is not receiving their entitled services, they can take legal action.</li>
-                        </ul>
-                    </div>
-                </div>
-                <p class="scroll-text">Scroll through these for more information!</p>
-                <iframe id="innerFrame" name="innerFrame" class="large-iframe" sandbox="allow-scripts allow-popups allow-forms allow-same-origin allow-popups-to-escape-sandbox allow-downloads allow-storage-access-by-user-activation" frameborder="0" allowfullscreen="" src="https://www.understood.org/en/articles/what-is-a-504-plan"></iframe>
-                <iframe id="innerFrame" name="innerFrame" class="large-iframe-2" sandbox="allow-scripts allow-popups allow-forms allow-same-origin allow-popups-to-escape-sandbox allow-downloads allow-storage-access-by-user-activation" frameborder="0" allowfullscreen="" src="https://www.understood.org/en/articles/what-is-an-iep"></iframe>
-                <div class="flex-container">
-                    <h3 class="keydiffs">The 2 Key Differences:</h3>
-                    <ul>
-                        <li class="keydiffs-list">An IEP is designated for students who qualify for Special Education services. A 504 plan is focused on providing a few accommodations allowing a student to succeed in general education, and is not part of SPED.</li>
-                        <li class="keydiffs-list">An IEP provides a more comprehensive plan of support and may be developed in collaboration with parents, teachers, psychologists, nurses, and other school staff.</li>
-                    </ul>
-                </div>
-            </section>
-    
-            <section id="accommodations" class="accommodations-section">
-                <a href="https://www.parentcenterhub.org/accommodations/" target="_blank">
-                    <h2>Accommodations</h2>
-                </a>
-                <p class="accommodations-section-first">
-                    Students who have an IDD, are neurodiverse, or are part of the special education program will usually receive learning accommodations or modes to help them succeed. Since every student is different and has different skills or learning styles, accommodations for each student are customized to the individual. Here are some common learning accommodations:
-                </p>
-                <ul class="accommodations-section-list">
-                    <li>Extended time on tests, and/or taking tests in quieter secluded areas</li>
-                    <li>Visual, auditory, and/or written instructions (e.g. a graphic organizer + spoken and written down instructions for an assignment)</li>
-                    <li>Noise cancelling headphones to mitigate distraction</li>
-                    <li>Flexible schedules to learn when students are most attentive and focused, as well as supervised breaks</li>
-                    <li>Sitting in specific areas in the classroom away from loud noises, crowds, and other distractions to mitigate sensory overload</li>
-                    <li>Fidget toys for de-stress and focus</li>
-                    <li>Lighting of the classroom can be adjusted to help students to mitigate sensory distractions</li>
-                    <li>Instructional Assistants (school employees) can help students stay focused, understand content, and organize their schoolwork</li>
-                    <li>Positive reinforcement as well as the repetition of tasks and policies to help students retain information better</li>
-                    <li>Counselors may provide emotional or academic support</li>
-                </ul>
-                <p class="accommodations-section-second">These are just some of the accommodations provided by teachers and counselors at different schools. It's important to remember not every neurodiverse student needs all these accommodations, and others may. Be respectful of students who may have a different learning style than yourself, and understand that it was something they were born with, not something they can control. In the end, we are all needing some help whether it comes to emotional support, tutoring, or physical support, but it differs from person to person.</p>
-            </section>
-    
-            <section id="social-cues" class="social-section">
-                <div class="social-cues-container">
-                    <div class="social-heading-content">
-                        <h2 class="social-heading">Social</h2>
-                        <p>As we know many people in our community process and act upon information differently. This often affects social interaction and a person's ability to build and maintain connections.</p>
-                    </div>
-                </div>
-                <div class="social-cues-container">
-                    <div class="social-heading-content">
-                        <h2 class="social-heading">Nonverbal Social Cues</h2>
-                        <p>There are many unspoken signals present in social interactions, such as body language, facial expressions, gestures, and tone of voice that come together in each person to express themselves. These cues can indicate people's:</p>
-                        <ul>
-                            <li>Emotional state - e.g. happy or frustrated, often through facial expression and tone of voice.</li>
-                            <li style="padding-top: 10px; font-weight: bold;">Engagement level - e.g. interest, agreement or boredom, often through posture and eye contact.</li>
-                            <li style="padding-top: 10px; font-weight: bold;">Readiness to transition - e.g. shifting topics or ending conversation, often through posture and looking away.</li>
-                            <li style="padding-top: 10px; font-weight: bold;">Comfort level - e.g. nervousness or trust, often through body language and personal space.</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>           
-    
-            <section id="communication" class="communication-section">
-                <h2 style="color: #247cff;">Communication Styles</h2>
-                <p class="communication-section-warning">It's important to understand that a diverse range of communication styles and habits are valid. The most enjoyable friendships often form when all parties are comfortable with their way of communicating.
-                    <br><br>It's also important for neurodivergent and neurotypical people alike to be aware of other communication styles. This is so that misunderstandings—such as perceiving someone as rude, strange, or inappropriate—don’t become barriers to connection between students with different ways of communicating.
-                </p>
-                <div>
-                    <h3 class="communication-section-nuerotypical">Neurotypical</h3>
-                    <p class="communication-section-nuerotypical-content">Neurotypical people use and interpret nonverbal cues, and are often more comfortable with eye contact.
-                        <br><br>Neurotypical students often use figurative language to convey meanings that differ from it's literal meaning. For example someone who's confused might use "I can't wrap my head around it." as a metaphor. Additionally, neurotypical people often use hyperboles, such as "I didn't eat breakfast today; I'm starving," if they were very hungry.
-                        <br><br>Many neurotypical students find it easy to switch back and forth between topics. Using nonverbal cues, neurotypical students can also sense when it's time to move on from a particular subject</p>
-                </div>
-                <div>
-                    <h3 class="communication-section-nuerodiverse">Neurodivergent</h3>
-                    <p class="communication-section-nuerodiverse-content"> Neurodivergent students' brains process visual and auditory information differently, and therefore interpret unspoken social cues differently in conversation. 
-                        <br><br>For many students with autism, interpreting these signals is often difficult, and eye contact may feel uncomfortable, distracting or unnecessary. Students with autism may have to actively think about these social cues, which can be mentally exhausting. For this reason they may feel comfortable using a flat affect (facial expression and tone of voice). 
-                        <br><br>Difficult interpreting social cues can affect sensing readiness to transition, such as when to take turns, and when it's appropriate to change subjects. Additionally, students with ADHD may unintentionally interrupt others due to impulsivity or excitement.3
-                        <br><br>Students with autism may interpret language very literally. Metaphors and exaggerations like "I can't wrap my head around it," or "I didn't eat breakfast today. I'm starving." can be taken at face value. This impacts a person's ability to understand humor, idioms and everyday phrases people often use in conversation. For this reason, neurodiverse students may prefer to speak directly and literally.
-                        <br><br>Neurodivergent individuals often info dumping about specific subjects (sometimes referred to as "special interests" for autism or "hyperfocus" for ADHD) with each other. With less pressure to conform to social norms, and less chance of being judged for talking too much, it can be relaxing to go into detail about these interests.
-                    </p>
-                </div>
-                <p class= "communication-section-relevant">Relevant Conditions: Autism Spectrum Disorder(ASD), Attention-Deficit/Hyperactivity Disorder(ADHD)</p>
-            </section>
-    
-            <section id="sensory-overload" class="sensory-section">
-                <h2 class="sensory-section-heading">Sensory Overload</h2>
-                <p class="sensory-section-content">For many neurodivergent students, their brains take in sensory input—like bright flickering lights, background noises, or physical contact in crowded hallways—more intensely. This can make it harder to focus and/or unpleasant to be in certain types of environments.</p>
-            </section>
-
-            <section id="emotional-regulation" class="emotional-regulation-section">
-                <h2 class="emotional-regulation-section-heading">Emotional Regulation</h2>
-                <p class="emotional-regulation-section-content">For many neurodivergent students, emotional regulation in the school setting can be more challenging due to consistent sensory overload, social dynamics, and unexpected changes. Stimuli like loud noises in the cafeteria, crowded hallways, or sudden schedule shifts can trigger emotional responses, making it difficult to remain calm or focused. Students may experience frustration, anxiety, or overwhelm more readily, as their brains process and react to environmental and social factors differently. Understanding and creating supportive spaces can help foster emotional stability and enable students to thrive academically and socially.</p>
-            </section>
-        </main>
-
-        <footer class="site-footer section-padding" id="contact">
-            <div class="container">
-                <div class="row">
-    
-                    <div class="col-lg-2 col-md-6 col-12 my-4 my-lg-0">
-                        <a href="index.html">
-                            <h5 style="color: #247cff; font-weight: bold;">NeuroScope</h5>
-                        </a>
-                    </div>
-    
-                    <div class="col-lg-3 col-12 ms-auto mt-4 mt-lg-0">
-                        <a href="sources.html">
-                            <p style="display: inline-block; font-size: 20px; font-weight: bold; color: #247cff; text-decoration: underline;">
-                                <i>
-                                    Sources
-                                </i>
-                            </p>
-                        </a>
-                        <p>
-                            <br>
-                            <br>
-                            <br>
-                        </p>
-                    </div>
-                </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f7f8f2" />
+    <meta name="description" content="Practical ways to make learning work for more people." />
+    <title>A more inclusive school · NeuroScope</title>
+    <link rel="canonical" href="https://neuroscope.us/school.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="A more inclusive school · NeuroScope" />
+    <meta
+      property="og:description"
+      content="Practical ways to make learning work for more people."
+    />
+    <meta property="og:image" content="https://neuroscope.us/assets/social.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <noscript><link rel="stylesheet" href="assets/no-script.css" /></noscript>
+    <script src="assets/preferences.js"></script>
+    <script src="assets/app.js" defer></script>
+  </head>
+  <body data-page="school">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="mobile-overlay" hidden></div>
+    <aside class="sidebar" id="sidebar">
+      <button class="icon-button mobile-nav-close" aria-label="Close navigation">
+        <svg
+          class="icon"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.6"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path d="m6 6 12 12M6 18 18 6" />
+        </svg></button
+      ><a href="index.html" class="brand" aria-label="NeuroScope home"
+        ><span class="brand-icon"
+          ><svg
+            class="icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path
+              d="M12 5c-3-5-8-1-7 2-5 1-4 7-1 8-2 5 5 8 8 4 3 4 10 1 8-4 3-1 4-7-1-8 1-3-4-7-7-2Zm0 0v14M5 7l3 2M4 15l4-2m11-6-3 2m4 6-4-2"
+            /></svg></span
+        >NeuroScope<span class="brand-period">.</span></a
+      >
+      <div class="sidebar-label">THE NEURODIVERSITY HANDBOOK</div>
+      <nav aria-label="Main navigation">
+        <a class="nav-home" href="index.html"
+          ><svg
+            class="icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <rect x="3" y="3" width="7" height="7" rx="1.5" />
+            <rect x="14" y="3" width="7" height="7" rx="1.5" />
+            <rect x="3" y="14" width="7" height="7" rx="1.5" />
+            <rect x="14" y="14" width="7" height="7" rx="1.5" /></svg
+          ><span>Overview</span></a
+        >
+        <div class="nav-group">
+          <span>START HERE</span
+          ><a href="top5.html"
+            ><svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="m12 3 2.8 6.2L21 12l-6.2 2.8L12 21l-2.8-6.2L3 12l6.2-2.8Z" /></svg
+            ><span>Five things to know</span
+            ><i class="nav-read" data-status="top5" aria-label="Read"></i
+          ></a>
+        </div>
+        <div class="nav-group">
+          <span>UNDERSTAND</span
+          ><a href="terminology.html"
+            ><svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M12 5v16M12 5C8 2 4 3 2 4v15c3-1 7-1 10 2 3-3 7-3 10-2V4c-2-1-6-2-10 1Z"
+              /></svg
+            ><span>Words worth knowing</span
+            ><i class="nav-read" data-status="terminology" aria-label="Read"></i></a
+          ><a href="conditions.html"
+            ><svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M12 5c-3-5-8-1-7 2-5 1-4 7-1 8-2 5 5 8 8 4 3 4 10 1 8-4 3-1 4-7-1-8 1-3-4-7-7-2Zm0 0v14M5 7l3 2M4 15l4-2m11-6-3 2m4 6-4-2"
+              /></svg
+            ><span>Explore the differences</span
+            ><i class="nav-read" data-status="conditions" aria-label="Read"></i
+          ></a>
+        </div>
+        <div class="nav-group">
+          <span>CONNECT & INCLUDE</span
+          ><a href="school.html" class="current" aria-current="page"
+            ><svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="m2 8 10-5 10 5-10 5L2 8Zm4 3v6c4 3 8 3 12 0v-6m4-3v8" /></svg
+            ><span>A more inclusive school</span
+            ><i class="nav-read" data-status="school" aria-label="Read"></i></a
+          ><a href="hndp.html"
+            ><svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M21 11a8 8 0 0 1-8 8H6l-4 3V10a8 8 0 0 1 8-8h3a8 8 0 0 1 8 9ZM7 8h9M7 12h6"
+              /></svg
+            ><span>In their own words</span
+            ><i class="nav-read" data-status="hndp" aria-label="Read"></i></a
+          ><a href="factmyth.html"
+            ><svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M9 8a3 3 0 1 1 4 3c-1 .5-1 1-1 3m0 3h.01" />
+              <circle cx="12" cy="12" r="10" /></svg
+            ><span>Fact, myth, or more to it?</span
+            ><i class="nav-read" data-status="factmyth" aria-label="Read"></i
+          ></a>
+        </div>
+        <div class="nav-group">
+          <span>GO FURTHER</span
+          ><a href="learnmore.html"
+            ><svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <path d="m16 8-3 5-5 3 3-5 5-3Z" /></svg
+            ><span>Keep exploring</span
+            ><i class="nav-read" data-status="learnmore" aria-label="Read"></i></a
+          ><a href="sources.html"
+            ><svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="m10 13 4-4m-6 6-2 2a3 3 0 0 1-4-4l5-5a3 3 0 0 1 4 0m2 3a3 3 0 0 0 4 0l5-5a3 3 0 0 0-4-4l-2 2"
+              /></svg
+            ><span>Sources & references</span
+            ><i class="nav-read" data-status="sources" aria-label="Read"></i
+          ></a>
+        </div>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="reading-tracker">
+          <div><span>Your reading journey</span><strong id="reading-count">0 / 8</strong></div>
+          <div class="reading-track"><span id="reading-fill"></span></div>
+          <small>One perspective at a time.</small>
+        </div>
+        <a href="about.html"
+          >About the project
+          <svg
+            class="icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M4 12h16m-6-6 6 6-6 6" /></svg></a
+        ><span class="sidebar-signoff">Different minds. Shared humanity.</span>
+      </div>
+    </aside>
+    <div class="site-body">
+      <header class="topbar">
+        <button
+          class="icon-button mobile-menu"
+          aria-label="Open navigation"
+          aria-controls="sidebar"
+          aria-expanded="false"
+        >
+          <svg
+            class="icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+        <div class="breadcrumb">
+          <span>The handbook</span><span>/</span><strong>A more inclusive school</strong>
+        </div>
+        <div class="topbar-actions">
+          <button class="search-trigger" aria-label="Search the handbook" data-open-search>
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="10.5" cy="10.5" r="6.5" />
+              <path d="m16 16 5 5" /></svg
+            ><span>Search the handbook</span><kbd>⌘ K</kbd></button
+          ><button
+            class="icon-button"
+            data-open-settings
+            aria-label="Reading preferences"
+            title="Reading preferences"
+          >
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M4 7h16M4 17h16" />
+              <circle cx="9" cy="7" r="3" />
+              <circle cx="16" cy="17" r="3" />
+            </svg>
+          </button>
+        </div>
+      </header>
+      <main id="main" tabindex="-1">
+        <header class="page-intro">
+          <span class="eyebrow">04 / EVERYDAY INCLUSION</span>
+          <h1>Better support.<br /><em>More possibility.</em></h1>
+          <p class="lede">
+            An inclusive school makes it easier for every student to participate. Start by
+            listening, then work together to remove barriers.
+          </p>
+        </header>
+        <div class="school-principles">
+          <article>
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M21 11a8 8 0 0 1-8 8H6l-4 3V10a8 8 0 0 1 8-8h3a8 8 0 0 1 8 9ZM7 8h9M7 12h6"
+              />
+            </svg>
+            <h2>Ask, then listen.</h2>
+            <p>
+              A student knows things about their experience that you cannot see. Ask privately what
+              helps.
+            </p>
+          </article>
+          <article>
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M12 5v16M12 5C8 2 4 3 2 4v15c3-1 7-1 10 2 3-3 7-3 10-2V4c-2-1-6-2-10 1Z" />
+            </svg>
+            <h2>Offer different routes.</h2>
+            <p>Instructions, participation, and assessment can take more than one form.</p>
+          </article>
+          <article>
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M20 5c-3-3-7-1-8 1-1-2-5-4-8-1-5 5 3 11 8 15 5-4 13-10 8-15Z" />
+            </svg>
+            <h2>Keep dignity central.</h2>
+            <p>
+              Protect privacy. Avoid assumptions about ability, effort, or what someone should find
+              easy.
+            </p>
+          </article>
+        </div>
+        <section class="section-block" id="support-planner">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">FROM UNDERSTANDING TO ACTION</span>
+              <h2>Build a conversation starter.</h2>
             </div>
-        </footer>
-
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/scrollspy.min.js"></script>
-        <script src="js/custom.js"></script>
-    </body>
+            <p>
+              Select ideas to discuss with a student, teacher, or support team. This checklist is a
+              starting point, not a formal plan.
+            </p>
+          </div>
+          <div class="support-planner">
+            <div class="support-options">
+              <fieldset>
+                <legend>Focus & organization</legend>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="support"
+                    value="Break assignments into smaller steps with clear deadlines."
+                  /><span>Break assignments into smaller steps with clear deadlines.</span></label
+                ><label
+                  ><input
+                    type="checkbox"
+                    name="support"
+                    value="Provide written instructions alongside spoken directions."
+                  /><span>Provide written instructions alongside spoken directions.</span></label
+                ><label
+                  ><input
+                    type="checkbox"
+                    name="support"
+                    value="Use a visible checklist or planner."
+                  /><span>Use a visible checklist or planner.</span></label
+                ><label
+                  ><input
+                    type="checkbox"
+                    name="support"
+                    value="Agree on movement breaks and flexible ways to work."
+                  /><span>Agree on movement breaks and flexible ways to work.</span></label
+                >
+              </fieldset>
+              <fieldset>
+                <legend>Sensory environment</legend>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="support"
+                    value="Offer a quiet space for work or recovery."
+                  /><span>Offer a quiet space for work or recovery.</span></label
+                ><label
+                  ><input
+                    type="checkbox"
+                    name="support"
+                    value="Discuss lighting and seating preferences."
+                  /><span>Discuss lighting and seating preferences.</span></label
+                ><label
+                  ><input
+                    type="checkbox"
+                    name="support"
+                    value="Allow suitable headphones when appropriate."
+                  /><span>Allow suitable headphones when appropriate.</span></label
+                ><label
+                  ><input
+                    type="checkbox"
+                    name="support"
+                    value="Give advance notice of noisy events or schedule changes."
+                  /><span>Give advance notice of noisy events or schedule changes.</span></label
+                >
+              </fieldset>
+              <fieldset>
+                <legend>Communication</legend>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="support"
+                    value="Use clear, direct language and allow processing time."
+                  /><span>Use clear, direct language and allow processing time.</span></label
+                ><label
+                  ><input
+                    type="checkbox"
+                    name="support"
+                    value="Offer written or alternative ways to participate."
+                  /><span>Offer written or alternative ways to participate.</span></label
+                ><label
+                  ><input
+                    type="checkbox"
+                    name="support"
+                    value="Avoid requiring eye contact as proof of attention."
+                  /><span>Avoid requiring eye contact as proof of attention.</span></label
+                ><label
+                  ><input
+                    type="checkbox"
+                    name="support"
+                    value="Ask privately how the student prefers to receive feedback."
+                  /><span>Ask privately how the student prefers to receive feedback.</span></label
+                >
+              </fieldset>
+              <fieldset>
+                <legend>Reading & learning</legend>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="support"
+                    value="Offer accessible text and audio where appropriate."
+                  /><span>Offer accessible text and audio where appropriate.</span></label
+                ><label
+                  ><input
+                    type="checkbox"
+                    name="support"
+                    value="Provide visual examples and model each step."
+                  /><span>Provide visual examples and model each step.</span></label
+                ><label
+                  ><input
+                    type="checkbox"
+                    name="support"
+                    value="Discuss extra time or an alternative way to demonstrate learning."
+                  /><span
+                    >Discuss extra time or an alternative way to demonstrate learning.</span
+                  ></label
+                ><label
+                  ><input
+                    type="checkbox"
+                    name="support"
+                    value="Check understanding without putting the student on the spot."
+                  /><span>Check understanding without putting the student on the spot.</span></label
+                >
+              </fieldset>
+            </div>
+            <aside class="selected-support">
+              <span class="eyebrow">MY DISCUSSION CHECKLIST</span>
+              <h3>Small changes.<br />Meaningful access.</h3>
+              <p id="support-count" role="status">Choose ideas from the list to get started.</p>
+              <ul id="support-selection"></ul>
+              <div class="planner-actions">
+                <button class="button" id="print-support" disabled>
+                  Print my checklist
+                  <svg
+                    class="icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M4 12h16m-6-6 6 6-6 6" />
+                  </svg></button
+                ><button class="text-link" id="reset-support" disabled>Clear selection</button>
+              </div>
+              <p class="fine-print">Your selections stay on this page and are not sent anywhere.</p>
+            </aside>
+          </div>
+        </section>
+        <section class="section-block">
+          <span class="eyebrow">UNDERSTANDING SCHOOL SUPPORT IN THE U.S.</span>
+          <h2>Two different frameworks for access.</h2>
+          <div class="comparison-wrap">
+            <table class="comparison">
+              <caption>
+                General overview of IEPs and Section 504 plans in U.S. public schools
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">At a glance</th>
+                  <th scope="col">IEP</th>
+                  <th scope="col">Section 504 plan</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Purpose</th>
+                  <td>Special education and related services for an eligible student.</td>
+                  <td>Equal access for an eligible student with a disability.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Framework</th>
+                  <td>Individuals with Disabilities Education Act (IDEA).</td>
+                  <td>Section 504 of the Rehabilitation Act.</td>
+                </tr>
+                <tr>
+                  <th scope="row">What it can include</th>
+                  <td>
+                    Individualized goals, specially designed instruction, accommodations, and
+                    services.
+                  </td>
+                  <td>Accommodations, related aids, and services needed for equal access.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Getting started</th>
+                  <td>Ask the school about an evaluation and the IEP process.</td>
+                  <td>Ask the school’s Section 504 coordinator about evaluation and support.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="fine-print">
+            Eligibility is individualized. A diagnosis does not automatically establish eligibility,
+            and the setting is not determined by the plan’s name. Ask your school about applicable
+            procedures.
+          </p>
+          <p class="citation">
+            Read the reference ·
+            <a href="https://sites.ed.gov/idea/" target="_blank" rel="noopener noreferrer"
+              >U.S. Department of Education · IDEA
+              <span class="external-mark" aria-label="opens in new tab">↗</span></a
+            >
+          </p>
+          <p class="citation">
+            Read the reference ·
+            <a
+              href="https://www.ed.gov/laws-and-policy/individuals-disabilities/section-504"
+              target="_blank"
+              rel="noopener noreferrer"
+              >U.S. Department of Education · Section 504
+              <span class="external-mark" aria-label="opens in new tab">↗</span></a
+            >
+          </p>
+        </section>
+        <section class="section-block">
+          <span class="eyebrow">CONNECTION WITHOUT ASSUMPTIONS</span>
+          <h2>Make communication a shared responsibility.</h2>
+          <div class="two-column">
+            <div>
+              <h3>Say what you mean.</h3>
+              <p>
+                Unspoken rules, sarcasm, and indirect requests are not equally clear to everyone.
+                Explain expectations directly and offer time to respond. Eye contact is not a
+                reliable measure of listening.
+              </p>
+            </div>
+            <div>
+              <h3>Make space to reset.</h3>
+              <p>
+                A noisy cafeteria, bright classroom, or sudden change can feel overwhelming. Offer
+                predictable routines and a quieter place to regroup without treating a break as a
+                punishment.
+              </p>
+            </div>
+          </div>
+        </section>
+        <div class="article-end">
+          <button class="button secondary" data-complete="school">
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="m5 12 4 4L19 6" /></svg
+            ><span>Mark as read</span></button
+          ><a class="next-chapter" href="hndp.html"
+            ><span><small>Up next</small>In their own words</span
+            ><svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M4 12h16m-6-6 6 6-6 6" /></svg
+          ></a>
+        </div>
+      </main>
+      <footer class="footer">
+        <a class="footer-brand" href="index.html">NeuroScope.</a>
+        <p>A wider world starts with understanding.</p>
+        <div>
+          <a href="about.html">About</a><a href="sources.html">Sources</a
+          ><a href="#main">Back to top ↑</a>
+        </div>
+        <small>A student-built educational resource. Made for every kind of mind.</small>
+      </footer>
+    </div>
+    <dialog id="search-dialog" class="search-dialog" aria-labelledby="search-title">
+      <div class="dialog-top">
+        <h2 id="search-title">Follow your curiosity.</h2>
+        <button class="icon-button" data-close-dialog aria-label="Close search">
+          <svg
+            class="icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="m6 6 12 12M6 18 18 6" />
+          </svg>
+        </button>
+      </div>
+      <label class="modal-search"
+        ><svg
+          class="icon"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.6"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <circle cx="10.5" cy="10.5" r="6.5" />
+          <path d="m16 16 5 5" /></svg
+        ><input
+          id="global-search"
+          type="search"
+          autocomplete="off"
+          placeholder="Try ADHD, school support, or masking…"
+          aria-label="Search all handbook content"
+      /></label>
+      <div id="search-results" class="search-results" aria-live="polite"></div>
+      <div class="search-footer">
+        <span>↑ ↓ to navigate · Enter to open</span><span>Esc to close</span>
+      </div>
+    </dialog>
+    <dialog id="settings-dialog" class="settings-dialog" aria-labelledby="settings-title">
+      <div class="dialog-top">
+        <h2 id="settings-title">Make room for your mind.</h2>
+        <button class="icon-button" data-close-dialog aria-label="Close reading preferences">
+          <svg
+            class="icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="m6 6 12 12M6 18 18 6" />
+          </svg>
+        </button>
+      </div>
+      <p>A few ways to make reading more comfortable. Your choices stay in this browser.</p>
+      <label class="preference-row"
+        ><span><strong>Larger text</strong><small>A little more room for every word.</small></span
+        ><input id="large-text" type="checkbox" role="switch" /></label
+      ><label class="preference-row"
+        ><span><strong>Calm mode</strong><small>Softer decoration, no transitions.</small></span
+        ><input id="calm-mode" type="checkbox" role="switch" /></label
+      ><button class="button" data-close-dialog>
+        Keep exploring
+        <svg
+          class="icon"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.6"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path d="M4 12h16m-6-6 6 6-6 6" />
+        </svg>
+      </button>
+    </dialog>
+    <div class="sr-only" id="announcement" role="status"></div>
+  </body>
 </html>

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://neuroscope.us/sitemap.xml
