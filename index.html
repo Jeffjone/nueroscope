@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#f7f8f2" />
+    <meta name="theme-color" content="#08090d" />
     <meta
       name="description"
       content="A free, approachable guide to neurodiversity. Understand different minds, hear lived experiences, and build a more inclusive world."
@@ -23,6 +23,7 @@
     <noscript><link rel="stylesheet" href="assets/no-script.css" /></noscript>
     <script src="assets/preferences.js"></script>
     <script src="assets/app.js" defer></script>
+    <script type="module" src="assets/experience.js"></script>
   </head>
   <body data-page="index">
     <a class="skip-link" href="#main">Skip to content</a>
@@ -92,7 +93,7 @@
             >
               <path d="m12 3 2.8 6.2L21 12l-6.2 2.8L12 21l-2.8-6.2L3 12l6.2-2.8Z" /></svg
             ><span>Five things to know</span
-            ><i class="nav-read" data-status="top5" aria-label="Read"></i
+            ><i class="nav-read" data-status="top5" aria-label=""></i
           ></a>
         </div>
         <div class="nav-group">
@@ -112,7 +113,7 @@
                 d="M12 5v16M12 5C8 2 4 3 2 4v15c3-1 7-1 10 2 3-3 7-3 10-2V4c-2-1-6-2-10 1Z"
               /></svg
             ><span>Words worth knowing</span
-            ><i class="nav-read" data-status="terminology" aria-label="Read"></i></a
+            ><i class="nav-read" data-status="terminology" aria-label=""></i></a
           ><a href="conditions.html"
             ><svg
               class="icon"
@@ -128,7 +129,7 @@
                 d="M12 5c-3-5-8-1-7 2-5 1-4 7-1 8-2 5 5 8 8 4 3 4 10 1 8-4 3-1 4-7-1-8 1-3-4-7-7-2Zm0 0v14M5 7l3 2M4 15l4-2m11-6-3 2m4 6-4-2"
               /></svg
             ><span>Explore the differences</span
-            ><i class="nav-read" data-status="conditions" aria-label="Read"></i
+            ><i class="nav-read" data-status="conditions" aria-label=""></i
           ></a>
         </div>
         <div class="nav-group">
@@ -146,7 +147,7 @@
             >
               <path d="m2 8 10-5 10 5-10 5L2 8Zm4 3v6c4 3 8 3 12 0v-6m4-3v8" /></svg
             ><span>A more inclusive school</span
-            ><i class="nav-read" data-status="school" aria-label="Read"></i></a
+            ><i class="nav-read" data-status="school" aria-label=""></i></a
           ><a href="hndp.html"
             ><svg
               class="icon"
@@ -162,7 +163,7 @@
                 d="M21 11a8 8 0 0 1-8 8H6l-4 3V10a8 8 0 0 1 8-8h3a8 8 0 0 1 8 9ZM7 8h9M7 12h6"
               /></svg
             ><span>In their own words</span
-            ><i class="nav-read" data-status="hndp" aria-label="Read"></i></a
+            ><i class="nav-read" data-status="hndp" aria-label=""></i></a
           ><a href="factmyth.html"
             ><svg
               class="icon"
@@ -177,7 +178,7 @@
               <path d="M9 8a3 3 0 1 1 4 3c-1 .5-1 1-1 3m0 3h.01" />
               <circle cx="12" cy="12" r="10" /></svg
             ><span>Fact, myth, or more to it?</span
-            ><i class="nav-read" data-status="factmyth" aria-label="Read"></i
+            ><i class="nav-read" data-status="factmyth" aria-label=""></i
           ></a>
         </div>
         <div class="nav-group">
@@ -196,7 +197,7 @@
               <circle cx="12" cy="12" r="10" />
               <path d="m16 8-3 5-5 3 3-5 5-3Z" /></svg
             ><span>Keep exploring</span
-            ><i class="nav-read" data-status="learnmore" aria-label="Read"></i></a
+            ><i class="nav-read" data-status="learnmore" aria-label=""></i></a
           ><a href="sources.html"
             ><svg
               class="icon"
@@ -212,7 +213,7 @@
                 d="m10 13 4-4m-6 6-2 2a3 3 0 0 1-4-4l5-5a3 3 0 0 1 4 0m2 3a3 3 0 0 0 4 0l5-5a3 3 0 0 0-4-4l-2 2"
               /></svg
             ><span>Sources & references</span
-            ><i class="nav-read" data-status="sources" aria-label="Read"></i
+            ><i class="nav-read" data-status="sources" aria-label=""></i
           ></a>
         </div>
       </nav>
@@ -240,13 +241,8 @@
     </aside>
     <div class="site-body">
       <header class="topbar">
-        <button
-          class="icon-button mobile-menu"
-          aria-label="Open navigation"
-          aria-controls="sidebar"
-          aria-expanded="false"
-        >
-          <svg
+        <a href="index.html" class="wordmark" aria-label="NeuroScope home"
+          ><svg
             class="icon"
             viewBox="0 0 24 24"
             fill="none"
@@ -256,12 +252,15 @@
             stroke-linejoin="round"
             aria-hidden="true"
           >
-            <path d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </button>
-        <div class="breadcrumb">
-          <span>The handbook</span><span>/</span><strong>Overview</strong>
-        </div>
+            <path
+              d="M12 5c-3-5-8-1-7 2-5 1-4 7-1 8-2 5 5 8 8 4 3 4 10 1 8-4 3-1 4-7-1-8 1-3-4-7-7-2Zm0 0v14M5 7l3 2M4 15l4-2m11-6-3 2m4 6-4-2"
+            /></svg
+          ><span>NeuroScope<span class="brand-period">↗</span></span></a
+        >
+        <nav class="header-links" aria-label="Featured chapters">
+          <a href="index.html#explore">The handbook</a><a href="school.html">In practice</a
+          ><a href="hndp.html">Perspectives</a>
+        </nav>
         <div class="topbar-actions">
           <button class="search-trigger" aria-label="Search the handbook" data-open-search>
             <svg
@@ -276,7 +275,7 @@
             >
               <circle cx="10.5" cy="10.5" r="6.5" />
               <path d="m16 16 5 5" /></svg
-            ><span>Search the handbook</span><kbd>⌘ K</kbd></button
+            ><span class="sr-only">Search the handbook</span><kbd>⌘ K</kbd></button
           ><button
             class="icon-button"
             data-open-settings
@@ -296,24 +295,109 @@
               <path d="M4 7h16M4 17h16" />
               <circle cx="9" cy="7" r="3" />
               <circle cx="16" cy="17" r="3" />
+            </svg></button
+          ><button
+            class="icon-button mobile-menu"
+            aria-label="Open navigation"
+            aria-controls="sidebar"
+            aria-expanded="false"
+          >
+            <span>INDEX</span
+            ><svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
         </div>
+        <div class="scroll-progress" aria-hidden="true">
+          <span id="scroll-progress-fill"></span>
+        </div>
       </header>
       <main id="main" tabindex="-1">
-        <section class="home-hero">
-          <div class="hero-copy">
+        <section class="home-hero" aria-labelledby="hero-title">
+          <div class="hero-kicker">
             <span class="eyebrow"
-              ><span class="live-dot"></span> A DIFFERENT WAY TO SEE DIFFERENCE</span
-            >
-            <h1>Different minds.<br /><em>A wider world.</em></h1>
-            <p>
-              A little understanding opens up a lot of possibility. Explore neurodiversity,
-              challenge assumptions, and learn how to make room for every mind.
-            </p>
-            <div class="hero-actions">
+              ><span class="live-dot"></span> THE HUMAN MIND DOESN’T DO ONE-SIZE-FITS-ALL.</span
+            ><span class="edition-label">AN INTERACTIVE FIELD GUIDE / VOL. 01</span>
+          </div>
+          <div class="hero-stage">
+            <div class="hero-copy">
+              <h1 id="hero-title">WIRED<br /><span>DIFFERENT.</span></h1>
+              <p>Not every mind takes the same path.<br />That’s where the possibility begins.</p>
               <a class="button" href="top5.html"
-                >Start with the essentials
+                >Discover neurodiversity
+                <span class="button-arrow"
+                  ><svg
+                    class="icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M4 12h16m-6-6 6 6-6 6" /></svg></span
+              ></a>
+            </div>
+            <div
+              class="neural-experience"
+              aria-label="An interactive visual introduction to different minds"
+            >
+              <div class="neural-orbit orbit-one" aria-hidden="true"></div>
+              <div class="neural-orbit orbit-two" aria-hidden="true"></div>
+              <img
+                class="neural-fallback"
+                src="assets/neural-poster.svg"
+                width="700"
+                height="650"
+                alt=""
+                aria-hidden="true"
+              /><canvas
+                id="neural-canvas"
+                role="img"
+                aria-label="A rotating, conceptual particle illustration of two brain hemispheres connected by pathways. The illustration is artistic, not an anatomical model or brain scan."
+              ></canvas>
+              <div class="scene-coordinate coordinate-top" aria-hidden="true">
+                NEUROSCOPE / EXPLORING HUMAN DIFFERENCE
+              </div>
+              <div class="scene-coordinate coordinate-side" aria-hidden="true">
+                ∞ POSSIBLE PERSPECTIVES
+              </div>
+              <button class="motion-toggle" data-motion-toggle aria-pressed="false">
+                <span aria-hidden="true">Ⅱ</span> <span class="motion-label">Pause motion</span>
+              </button>
+              <span class="canvas-hint"
+                ><span class="pointer-hint">MOVE YOUR POINTER TO EXPLORE</span
+                ><span class="touch-hint">CHOOSE A PERSPECTIVE BELOW</span></span
+              >
+            </div>
+          </div>
+          <div class="perspective-bar">
+            <div class="perspective-choices" role="group" aria-label="Explore a perspective">
+              <button data-perspective="attention" class="active" aria-pressed="true">
+                <span>01</span> Attention</button
+              ><button data-perspective="senses" aria-pressed="false"><span>02</span> Senses</button
+              ><button data-perspective="connection" aria-pressed="false">
+                <span>03</span> Connection
+              </button>
+            </div>
+            <div class="perspective-copy" aria-live="polite">
+              <strong id="perspective-title">There’s more than one way to focus.</strong>
+              <p id="perspective-description">
+                Attention, organization, and switching tasks can feel different from one person to
+                the next.
+              </p>
+              <a id="perspective-link" href="conditions.html#adhd"
+                >Explore attention & ADHD
                 <svg
                   class="icon"
                   viewBox="0 0 24 24"
@@ -324,402 +408,467 @@
                   stroke-linejoin="round"
                   aria-hidden="true"
                 >
-                  <path d="M4 12h16m-6-6 6 6-6 6" /></svg></a
-              ><a class="text-link" href="#explore">Explore the handbook <span>↓</span></a>
-            </div>
-            <div class="hero-footnote">
-              <svg
-                class="icon"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.6"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-              >
-                <path d="M12 5v16M12 5C8 2 4 3 2 4v15c3-1 7-1 10 2 3-3 7-3 10-2V4c-2-1-6-2-10 1Z" />
-              </svg>
-              A free handbook for students, educators & curious minds
+                  <path d="M4 12h16m-6-6 6 6-6 6" /></svg
+              ></a>
             </div>
           </div>
-          <figure class="brain-figure">
-            <img
-              src="assets/mind-map.svg"
-              width="600"
-              height="510"
-              alt="An illustrated mind made of distinct, connected pathways, with labels for thinking, sensing, learning, and connecting."
-            />
-            <figcaption>Different connections. Endless perspectives.</figcaption>
-          </figure>
+          <div class="hero-baseline">
+            <a href="#the-idea">SCROLL TO SHIFT YOUR PERSPECTIVE <span>↓</span></a
+            ><span>CONCEPTUAL ARTWORK. REAL HUMAN DIFFERENCES.</span>
+          </div>
         </section>
-        <section class="principle-strip">
-          <span class="eyebrow">THE IDEA AT THE HEART OF IT ALL</span>
-          <p>
-            There is no single “right” way<br class="desktop-break" />
-            to think, learn, or experience the world.
-          </p>
-          <span class="strip-mark" aria-hidden="true">✳</span>
-        </section>
-        <section id="explore" class="section-block">
-          <div class="section-heading">
-            <div>
-              <span class="eyebrow">YOUR FIELD GUIDE TO NEURODIVERSITY</span>
-              <h2>A little curiosity.<br />A new perspective.</h2>
+        <section class="manifesto-section" id="the-idea">
+          <div class="section-marker">
+            <span>01 / A SHIFT IN PERSPECTIVE</span
+            ><span class="tiny-cross" aria-hidden="true">+</span>
+          </div>
+          <div class="manifesto-layout">
+            <h2 class="manifesto" data-reveal>
+              There is no single<br /><span>right way</span> to think,<br />learn, or be.
+            </h2>
+            <div class="manifesto-aside">
+              <span class="asterisk" aria-hidden="true">✳</span>
+              <p>
+                Neurodiversity is the natural variation in human minds. How we pay attention. How we
+                communicate. How we experience the world.
+              </p>
+              <p>
+                Understanding those differences can change what we make possible for each other.
+              </p>
+              <a class="text-link" href="terminology.html#neurodiversity"
+                >Start with the language
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M4 12h16m-6-6 6 6-6 6" /></svg
+              ></a>
             </div>
+          </div>
+        </section>
+        <section class="environment-section" id="change-the-setting">
+          <div class="section-marker">
+            <span>02 / UNDERSTANDING, IN ACTION</span><span>TRY IT YOURSELF ↘</span>
+          </div>
+          <div class="section-heading">
+            <h2>CHANGE THE SETTING.<br /><span>OPEN UP POSSIBILITY.</span></h2>
             <p>
-              Start at the beginning, or follow what interests you.<br />There’s more than one way
-              to learn here.
+              A setting can create a barrier. Explore a few ways to make participation easier. Every
+              person’s preferences still matter.
             </p>
           </div>
-          <div class="filter-tabs" role="group" aria-label="Filter handbook chapters">
-            <button class="active" data-chapter-filter="All" aria-pressed="true">
-              All chapters <span>8</span></button
-            ><button data-chapter-filter="The foundations" aria-pressed="false">
-              The foundations</button
-            ><button data-chapter-filter="Everyday inclusion" aria-pressed="false">
-              Everyday inclusion</button
-            ><button data-chapter-filter="Resources" aria-pressed="false">Resources</button>
+          <div class="environment-lab">
+            <div class="environment-controls">
+              <span class="eyebrow">CHOOSE A CONTEXT</span>
+              <div class="scenario-tabs" role="group" aria-label="Choose an inclusion scenario">
+                <button data-scenario="classroom" class="active" aria-pressed="true">
+                  A classroom <span>01</span></button
+                ><button data-scenario="project" aria-pressed="false">
+                  A group project <span>02</span></button
+                ><button data-scenario="routine" aria-pressed="false">
+                  A new routine <span>03</span>
+                </button>
+              </div>
+              <button class="access-toggle" data-access-toggle aria-pressed="false">
+                <span class="toggle-track" aria-hidden="true"><i></i></span
+                ><span>Show access options</span>
+              </button>
+              <p class="lab-instruction">
+                Switch it on. See what a few thoughtful adjustments could look like.
+              </p>
+            </div>
+            <div class="environment-visual" data-access="false">
+              <span class="diagram-kicker" id="environment-label">A CLASSROOM / ONE ROUTE IN</span>
+              <div class="access-diagram" aria-hidden="true">
+                <svg viewBox="0 0 700 260" fill="none">
+                  <path
+                    class="diagram-route"
+                    d="M80 130H170C210 130 190 45 240 45H460C510 45 490 130 540 130H620"
+                  />
+                  <path
+                    class="diagram-route"
+                    d="M80 130H170C210 130 190 215 240 215H460C510 215 490 130 540 130H620"
+                  />
+                  <path class="diagram-main" d="M80 130H620" />
+                  <circle cx="80" cy="130" r="23" />
+                  <circle cx="620" cy="130" r="23" />
+                  <circle class="diagram-core" cx="350" cy="130" r="44" />
+                  <circle class="orbit-dot" r="4" /></svg
+                ><span class="diagram-start">A LEARNER</span
+                ><span class="diagram-center">ACCESS</span
+                ><span class="diagram-end">PARTICIPATION</span>
+              </div>
+              <div class="environment-factors" aria-live="polite">
+                <div>
+                  <span id="factor-one-label">ENVIRONMENT</span
+                  ><strong id="factor-one">Background chatter</strong>
+                </div>
+                <div>
+                  <span id="factor-two-label">INSTRUCTIONS</span
+                  ><strong id="factor-two">Spoken directions only</strong>
+                </div>
+                <div>
+                  <span id="factor-three-label">PARTICIPATION</span
+                  ><strong id="factor-three">One written response</strong>
+                </div>
+              </div>
+              <p id="environment-takeaway">
+                The same setup can work well for some learners and create barriers for others.
+              </p>
+              <a class="text-link" href="school.html#support-planner"
+                >Build a support checklist
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M4 12h16m-6-6 6 6-6 6" /></svg
+              ></a>
+            </div>
           </div>
-          <div class="chapter-grid">
-            <a class="chapter-card peach" href="top5.html"
-              ><div class="card-top">
-                <span class="icon-box"
-                  ><svg
-                    class="icon"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="m12 3 2.8 6.2L21 12l-6.2 2.8L12 21l-2.8-6.2L3 12l6.2-2.8Z"
-                    /></svg></span
-                ><span class="chapter-index">01</span>
-              </div>
-              <span class="eyebrow">Start here</span>
-              <h3>Five things to know</h3>
-              <p>The big ideas behind a more inclusive world.</p>
-              <div class="card-bottom">
-                <span>5 min read</span><span class="card-status" data-status="top5"></span
-                ><svg
-                  class="icon"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="M4 12h16m-6-6 6 6-6 6" />
-                </svg></div></a
-            ><a class="chapter-card sage" href="terminology.html"
-              ><div class="card-top">
-                <span class="icon-box"
-                  ><svg
-                    class="icon"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M12 5v16M12 5C8 2 4 3 2 4v15c3-1 7-1 10 2 3-3 7-3 10-2V4c-2-1-6-2-10 1Z"
-                    /></svg></span
-                ><span class="chapter-index">02</span>
-              </div>
-              <span class="eyebrow">The foundations</span>
-              <h3>Words worth knowing</h3>
-              <p>A plain-language guide to neurodiversity terminology.</p>
-              <div class="card-bottom">
-                <span>7 min read</span><span class="card-status" data-status="terminology"></span
-                ><svg
-                  class="icon"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="M4 12h16m-6-6 6 6-6 6" />
-                </svg></div></a
-            ><a class="chapter-card lavender" href="conditions.html"
-              ><div class="card-top">
-                <span class="icon-box"
-                  ><svg
-                    class="icon"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M12 5c-3-5-8-1-7 2-5 1-4 7-1 8-2 5 5 8 8 4 3 4 10 1 8-4 3-1 4-7-1-8 1-3-4-7-7-2Zm0 0v14M5 7l3 2M4 15l4-2m11-6-3 2m4 6-4-2"
-                    /></svg></span
-                ><span class="chapter-index">03</span>
-              </div>
-              <span class="eyebrow">The foundations</span>
-              <h3>Explore the differences</h3>
-              <p>Understand conditions, experiences, and individual needs.</p>
-              <div class="card-bottom">
-                <span>10 min read</span><span class="card-status" data-status="conditions"></span
-                ><svg
-                  class="icon"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="M4 12h16m-6-6 6 6-6 6" />
-                </svg></div></a
-            ><a class="chapter-card butter" href="school.html"
-              ><div class="card-top">
-                <span class="icon-box"
-                  ><svg
-                    class="icon"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                  >
-                    <path d="m2 8 10-5 10 5-10 5L2 8Zm4 3v6c4 3 8 3 12 0v-6m4-3v8" /></svg></span
-                ><span class="chapter-index">04</span>
-              </div>
-              <span class="eyebrow">Everyday inclusion</span>
-              <h3>A more inclusive school</h3>
-              <p>Practical ways to make learning work for more people.</p>
-              <div class="card-bottom">
-                <span>8 min read</span><span class="card-status" data-status="school"></span
-                ><svg
-                  class="icon"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="M4 12h16m-6-6 6 6-6 6" />
-                </svg></div></a
-            ><a class="chapter-card peach" href="hndp.html"
-              ><div class="card-top">
-                <span class="icon-box"
-                  ><svg
-                    class="icon"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M21 11a8 8 0 0 1-8 8H6l-4 3V10a8 8 0 0 1 8-8h3a8 8 0 0 1 8 9ZM7 8h9M7 12h6"
-                    /></svg></span
-                ><span class="chapter-index">05</span>
-              </div>
-              <span class="eyebrow">Everyday inclusion</span>
-              <h3>In their own words</h3>
-              <p>Listen to neurodivergent people share their experiences.</p>
-              <div class="card-bottom">
-                <span>6 min read</span><span class="card-status" data-status="hndp"></span
-                ><svg
-                  class="icon"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="M4 12h16m-6-6 6 6-6 6" />
-                </svg></div></a
-            ><a class="chapter-card sage" href="factmyth.html"
-              ><div class="card-top">
-                <span class="icon-box"
-                  ><svg
-                    class="icon"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                  >
-                    <path d="M9 8a3 3 0 1 1 4 3c-1 .5-1 1-1 3m0 3h.01" />
-                    <circle cx="12" cy="12" r="10" /></svg></span
-                ><span class="chapter-index">06</span>
-              </div>
-              <span class="eyebrow">Put it into practice</span>
-              <h3>Fact, myth, or more to it?</h3>
-              <p>Question assumptions with a six-question knowledge check.</p>
-              <div class="card-bottom">
-                <span>4 min read</span><span class="card-status" data-status="factmyth"></span
-                ><svg
-                  class="icon"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="M4 12h16m-6-6 6 6-6 6" />
-                </svg></div></a
-            ><a class="chapter-card lavender" href="learnmore.html"
-              ><div class="card-top">
-                <span class="icon-box"
-                  ><svg
-                    class="icon"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                  >
-                    <circle cx="12" cy="12" r="10" />
-                    <path d="m16 8-3 5-5 3 3-5 5-3Z" /></svg></span
-                ><span class="chapter-index">07</span>
-              </div>
-              <span class="eyebrow">Resources</span>
-              <h3>Keep exploring</h3>
-              <p>Reading lists, talks, and stories to take you further.</p>
-              <div class="card-bottom">
-                <span>4 min read</span><span class="card-status" data-status="learnmore"></span
-                ><svg
-                  class="icon"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="M4 12h16m-6-6 6 6-6 6" />
-                </svg></div></a
-            ><a class="chapter-card butter" href="sources.html"
-              ><div class="card-top">
-                <span class="icon-box"
-                  ><svg
-                    class="icon"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="m10 13 4-4m-6 6-2 2a3 3 0 0 1-4-4l5-5a3 3 0 0 1 4 0m2 3a3 3 0 0 0 4 0l5-5a3 3 0 0 0-4-4l-2 2"
-                    /></svg></span
-                ><span class="chapter-index">08</span>
-              </div>
-              <span class="eyebrow">Resources</span>
-              <h3>Sources & references</h3>
-              <p>Follow the research and explore the original references.</p>
-              <div class="card-bottom">
-                <span>5 min read</span><span class="card-status" data-status="sources"></span
-                ><svg
-                  class="icon"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="M4 12h16m-6-6 6 6-6 6" />
-                </svg></div
-            ></a>
+          <p class="lab-footnote">
+            AN EXAMPLE OF CHANGING AN ENVIRONMENT, NOT A SIMULATION OF A CONDITION OR A FORMAL
+            SUPPORT PLAN.
+          </p>
+        </section>
+        <section id="explore" class="explore-section">
+          <div class="section-marker">
+            <span>03 / FOLLOW YOUR CURIOSITY</span><span>08 CHAPTERS / YOUR OWN PACE</span>
           </div>
-          <p class="filter-empty" hidden>No chapters match this filter.</p>
+          <div class="index-layout">
+            <div class="index-intro">
+              <h2>
+                MAKE ROOM<br />FOR A <span>NEW<br />PERSPECTIVE.</span>
+              </h2>
+              <p>Start with the essentials.<br />Or take a different route in.</p>
+              <a class="text-link" href="about.html"
+                >About the project
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M4 12h16m-6-6 6 6-6 6" /></svg
+              ></a>
+            </div>
+            <div class="chapter-index-list">
+              <div class="filter-tabs" role="group" aria-label="Filter handbook chapters">
+                <button class="active" data-chapter-filter="All" aria-pressed="true">
+                  All chapters</button
+                ><button data-chapter-filter="The foundations" aria-pressed="false">
+                  Understand</button
+                ><button data-chapter-filter="Everyday inclusion" aria-pressed="false">
+                  Include</button
+                ><button data-chapter-filter="Resources" aria-pressed="false">Go further</button>
+              </div>
+              <div class="chapter-grid">
+                <a class="chapter-card" href="top5.html"
+                  ><span class="chapter-number">01</span>
+                  <div class="chapter-row-copy">
+                    <span class="eyebrow">Start here</span>
+                    <h3>Five things to know</h3>
+                    <p>The big ideas behind a more inclusive world.</p>
+                  </div>
+                  <span class="chapter-row-meta"
+                    ><span>5 MIN</span><span class="card-status" data-status="top5"></span
+                    ><svg
+                      class="icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M4 12h16m-6-6 6 6-6 6" /></svg></span></a
+                ><a class="chapter-card" href="terminology.html"
+                  ><span class="chapter-number">02</span>
+                  <div class="chapter-row-copy">
+                    <span class="eyebrow">The foundations</span>
+                    <h3>Words worth knowing</h3>
+                    <p>A plain-language guide to neurodiversity terminology.</p>
+                  </div>
+                  <span class="chapter-row-meta"
+                    ><span>7 MIN</span><span class="card-status" data-status="terminology"></span
+                    ><svg
+                      class="icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M4 12h16m-6-6 6 6-6 6" /></svg></span></a
+                ><a class="chapter-card" href="conditions.html"
+                  ><span class="chapter-number">03</span>
+                  <div class="chapter-row-copy">
+                    <span class="eyebrow">The foundations</span>
+                    <h3>Explore the differences</h3>
+                    <p>Understand conditions, experiences, and individual needs.</p>
+                  </div>
+                  <span class="chapter-row-meta"
+                    ><span>10 MIN</span><span class="card-status" data-status="conditions"></span
+                    ><svg
+                      class="icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M4 12h16m-6-6 6 6-6 6" /></svg></span></a
+                ><a class="chapter-card" href="school.html"
+                  ><span class="chapter-number">04</span>
+                  <div class="chapter-row-copy">
+                    <span class="eyebrow">Everyday inclusion</span>
+                    <h3>A more inclusive school</h3>
+                    <p>Practical ways to make learning work for more people.</p>
+                  </div>
+                  <span class="chapter-row-meta"
+                    ><span>8 MIN</span><span class="card-status" data-status="school"></span
+                    ><svg
+                      class="icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M4 12h16m-6-6 6 6-6 6" /></svg></span></a
+                ><a class="chapter-card" href="hndp.html"
+                  ><span class="chapter-number">05</span>
+                  <div class="chapter-row-copy">
+                    <span class="eyebrow">Everyday inclusion</span>
+                    <h3>In their own words</h3>
+                    <p>Listen to neurodivergent people share their experiences.</p>
+                  </div>
+                  <span class="chapter-row-meta"
+                    ><span>6 MIN</span><span class="card-status" data-status="hndp"></span
+                    ><svg
+                      class="icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M4 12h16m-6-6 6 6-6 6" /></svg></span></a
+                ><a class="chapter-card" href="factmyth.html"
+                  ><span class="chapter-number">06</span>
+                  <div class="chapter-row-copy">
+                    <span class="eyebrow">Put it into practice</span>
+                    <h3>Fact, myth, or more to it?</h3>
+                    <p>Question assumptions with a six-question knowledge check.</p>
+                  </div>
+                  <span class="chapter-row-meta"
+                    ><span>4 MIN</span><span class="card-status" data-status="factmyth"></span
+                    ><svg
+                      class="icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M4 12h16m-6-6 6 6-6 6" /></svg></span></a
+                ><a class="chapter-card" href="learnmore.html"
+                  ><span class="chapter-number">07</span>
+                  <div class="chapter-row-copy">
+                    <span class="eyebrow">Resources</span>
+                    <h3>Keep exploring</h3>
+                    <p>Reading lists, talks, and stories to take you further.</p>
+                  </div>
+                  <span class="chapter-row-meta"
+                    ><span>4 MIN</span><span class="card-status" data-status="learnmore"></span
+                    ><svg
+                      class="icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M4 12h16m-6-6 6 6-6 6" /></svg></span></a
+                ><a class="chapter-card" href="sources.html"
+                  ><span class="chapter-number">08</span>
+                  <div class="chapter-row-copy">
+                    <span class="eyebrow">Resources</span>
+                    <h3>Sources & references</h3>
+                    <p>Follow the research and explore the original references.</p>
+                  </div>
+                  <span class="chapter-row-meta"
+                    ><span>5 MIN</span><span class="card-status" data-status="sources"></span
+                    ><svg
+                      class="icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M4 12h16m-6-6 6 6-6 6" /></svg></span
+                ></a>
+              </div>
+              <p class="filter-empty" hidden>No chapters match this filter.</p>
+            </div>
+          </div>
         </section>
         <section class="voices-feature">
-          <div class="voices-art" aria-hidden="true">
-            <div class="quote-mark">“</div>
-            <div class="voice-lines">
-              <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i
-              ><i></i><i></i><i></i><i></i><i></i>
-            </div>
-            <span>LISTEN. LEARN. UNDERSTAND.</span>
+          <div class="section-marker">
+            <span>04 / LIVED EXPERIENCE</span><span>REAL PEOPLE. THEIR OWN WORDS.</span>
           </div>
-          <div>
-            <span class="eyebrow">LIVED EXPERIENCE, FIRSTHAND</span>
-            <h2>Understanding starts<br />with listening.</h2>
-            <p>
-              No definition can tell the whole story. Hear neurodivergent people talk about their
-              lives, in their own words.
-            </p>
-            <a class="button" href="hndp.html"
-              >Meet the people behind the perspectives
-              <svg
-                class="icon"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.6"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-              >
-                <path d="M4 12h16m-6-6 6 6-6 6" /></svg
-            ></a>
+          <div class="voices-feature-content">
+            <div class="voices-heading">
+              <span class="eyebrow">BEFORE YOU ASSUME.</span>
+              <h2>LISTEN<br /><span>FIRST.</span></h2>
+              <div class="voice-lines" aria-hidden="true">
+                <i style="--i: 0; --bar: 29%"></i><i style="--i: 1; --bar: 46%"></i
+                ><i style="--i: 2; --bar: 63%"></i><i style="--i: 3; --bar: 80%"></i
+                ><i style="--i: 4; --bar: 27%"></i><i style="--i: 5; --bar: 44%"></i
+                ><i style="--i: 6; --bar: 61%"></i><i style="--i: 7; --bar: 78%"></i
+                ><i style="--i: 8; --bar: 25%"></i><i style="--i: 9; --bar: 42%"></i
+                ><i style="--i: 10; --bar: 59%"></i><i style="--i: 11; --bar: 76%"></i
+                ><i style="--i: 12; --bar: 23%"></i><i style="--i: 13; --bar: 40%"></i
+                ><i style="--i: 14; --bar: 57%"></i><i style="--i: 15; --bar: 74%"></i
+                ><i style="--i: 16; --bar: 21%"></i><i style="--i: 17; --bar: 38%"></i
+                ><i style="--i: 18; --bar: 55%"></i><i style="--i: 19; --bar: 72%"></i
+                ><i style="--i: 20; --bar: 19%"></i><i style="--i: 21; --bar: 36%"></i
+                ><i style="--i: 22; --bar: 53%"></i><i style="--i: 23; --bar: 70%"></i
+                ><i style="--i: 24; --bar: 87%"></i><i style="--i: 25; --bar: 34%"></i
+                ><i style="--i: 26; --bar: 51%"></i><i style="--i: 27; --bar: 68%"></i
+                ><i style="--i: 28; --bar: 85%"></i><i style="--i: 29; --bar: 32%"></i
+                ><i style="--i: 30; --bar: 49%"></i><i style="--i: 31; --bar: 66%"></i
+                ><i style="--i: 32; --bar: 83%"></i>
+              </div>
+            </div>
+            <div class="voices-copy">
+              <p class="big-copy">No definition can tell<br />the whole story.</p>
+              <p>
+                Hear neurodivergent people share their experiences with identity, learning, work,
+                and everyday life.
+              </p>
+              <a class="button" href="hndp.html"
+                >Hear their perspectives
+                <span class="button-arrow"
+                  ><svg
+                    class="icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M4 12h16m-6-6 6 6-6 6" /></svg></span
+              ></a>
+              <div class="voices-names">
+                <span><small>01</small>Carrie Beckwith-Fellows</span
+                ><span><small>02</small>Hank Green</span><span><small>03</small>Conor</span
+                ><span><small>04</small>John Rhodes</span>
+              </div>
+            </div>
           </div>
         </section>
-        <section class="quiz-banner">
-          <div class="quiz-symbol" aria-hidden="true">?</div>
-          <div>
-            <span class="eyebrow">A MOMENT TO RETHINK</span>
-            <h2>Fact, myth, or more to it?</h2>
-            <p>Six questions. A few assumptions worth questioning.</p>
+        <section class="quick-check">
+          <div class="section-marker">
+            <span>05 / QUESTION WHAT YOU KNOW</span><span>A MOMENT TO RETHINK</span>
           </div>
-          <a class="button secondary" href="factmyth.html"
-            >Test your understanding
-            <svg
-              class="icon"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.6"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              aria-hidden="true"
-            >
-              <path d="M4 12h16m-6-6 6 6-6 6" /></svg
-          ></a>
+          <div class="quick-check-layout">
+            <div>
+              <span class="eyebrow">FACT OR MYTH?</span>
+              <h2>“Neurodiversity<br />only refers<br />to autism.”</h2>
+            </div>
+            <div class="quick-check-answer">
+              <p>What do you think?</p>
+              <div
+                class="quick-choices"
+                role="group"
+                aria-label="Answer the statement about neurodiversity"
+              >
+                <button data-quick-answer="Fact">
+                  It’s a fact
+                  <svg
+                    class="icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M4 12h16m-6-6 6 6-6 6" />
+                  </svg></button
+                ><button data-quick-answer="Myth">
+                  It’s a myth
+                  <svg
+                    class="icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M4 12h16m-6-6 6 6-6 6" />
+                  </svg>
+                </button>
+              </div>
+              <div id="quick-feedback" class="quick-feedback" role="status" hidden></div>
+              <a class="text-link" href="factmyth.html"
+                >Take the full knowledge check
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M4 12h16m-6-6 6 6-6 6" /></svg
+              ></a>
+            </div>
+          </div>
         </section>
       </main>
       <footer class="footer">
         <a class="footer-brand" href="index.html">NeuroScope.</a>
-        <p>A wider world starts with understanding.</p>
+        <p>MORE WAYS TO THINK. MORE WAYS TO BE.</p>
         <div>
           <a href="about.html">About</a><a href="sources.html">Sources</a
           ><a href="#main">Back to top ↑</a>
@@ -793,7 +942,9 @@
         ><span><strong>Larger text</strong><small>A little more room for every word.</small></span
         ><input id="large-text" type="checkbox" role="switch" /></label
       ><label class="preference-row"
-        ><span><strong>Calm mode</strong><small>Softer decoration, no transitions.</small></span
+        ><span
+          ><strong>Calm mode</strong
+          ><small>Pause ambient motion and remove transitions.</small></span
         ><input id="calm-mode" type="checkbox" role="switch" /></label
       ><button class="button" data-close-dialog>
         Keep exploring

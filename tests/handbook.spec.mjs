@@ -285,3 +285,127 @@ test("blocked storage and failed optional requests leave usable fallback content
   await expect(page.locator(".answer-guide article")).toHaveCount(6);
   expect(errors).toEqual([]);
 });
+test("perspective explorer changes the lesson and destination with keyboard controls", async ({
+  page,
+}) => {
+  await page.goto("/");
+  await expect(page.locator(".neural-experience")).toHaveClass(/canvas-ready/);
+  const senses = page.getByRole("button", { name: "02 Senses", exact: true });
+  await senses.focus();
+  await page.keyboard.press("Enter");
+  await expect(senses).toHaveAttribute("aria-pressed", "true");
+  await expect(page.locator("#perspective-title")).toHaveText(
+    "The same room can feel very different.",
+  );
+  await expect(page.locator("#perspective-link")).toHaveAttribute(
+    "href",
+    "terminology.html#sensory-sensitivity",
+  );
+  await page
+    .getByRole("button", { name: "03 Connection", exact: true })
+    .click();
+  await expect(page.locator("#perspective-description")).toContainText(
+    "communication preferences",
+  );
+  await expect(page.locator("#perspective-link")).toHaveAttribute(
+    "href",
+    "school.html",
+  );
+});
+test("inclusion explorer changes context and explains the selected access options", async ({
+  page,
+}) => {
+  await page.goto("/");
+  const access = page.getByRole("button", {
+    name: "Show access options",
+    exact: true,
+  });
+  await access.click();
+  await expect(access).toHaveAttribute("aria-pressed", "true");
+  await expect(page.locator("#factor-two")).toHaveText(
+    "Written + spoken steps",
+  );
+  await page
+    .getByRole("button", { name: "A group project 02", exact: true })
+    .click();
+  await expect(page.locator("#factor-two")).toHaveText(
+    "Time to respond in writing",
+  );
+  await expect(page.locator("#environment-takeaway")).toContainText("writing");
+  await access.click();
+  await expect(page.locator("#factor-two")).toHaveText(
+    "Fast, overlapping discussion",
+  );
+  await page
+    .getByRole("button", { name: "A new routine 03", exact: true })
+    .click();
+  await expect(page.locator("#factor-one")).toHaveText("Last-minute changes");
+  await access.click();
+  await expect(page.locator("#factor-one")).toHaveText(
+    "Advance notice where possible",
+  );
+  const scan = await new AxeBuilder({ page })
+    .withTags(["wcag2a", "wcag2aa", "wcag21aa"])
+    .analyze();
+  expect(scan.violations).toEqual([]);
+});
+test("homepage knowledge check explains both choices and links to the full quiz", async ({
+  page,
+}) => {
+  await page.goto("/");
+  await page.getByRole("button", { name: "It’s a fact", exact: false }).click();
+  await expect(page.locator("#quick-feedback")).toContainText(
+    "A chance to rethink",
+  );
+  await page.getByRole("button", { name: "It’s a myth", exact: false }).click();
+  await expect(page.locator("#quick-feedback")).toContainText("Exactly.");
+  await page
+    .getByRole("link", { name: "Take the full knowledge check" })
+    .click();
+  await expect(page).toHaveURL(/factmyth.html/);
+});
+test("ambient canvas motion can be paused and resumed, and honors reduced motion", async ({
+  page,
+}) => {
+  await page.goto("/");
+  await expect(page.locator(".neural-experience")).toHaveClass(/canvas-ready/);
+  const canvas = page.locator("#neural-canvas");
+  const first = await canvas.evaluate((c) => c.toDataURL());
+  await expect
+    .poll(async () => (await canvas.evaluate((c) => c.toDataURL())) !== first)
+    .toBe(true);
+  await page
+    .getByRole("button", { name: "Pause motion", exact: false })
+    .click();
+  await expect(page.locator("html")).toHaveClass(/calm-mode/);
+  await page.waitForTimeout(100);
+  const paused = await canvas.evaluate((c) => c.toDataURL());
+  await page.waitForTimeout(180);
+  expect((await canvas.evaluate((c) => c.toDataURL())) === paused).toBe(true);
+  await page
+    .getByRole("button", { name: "Resume motion", exact: false })
+    .click();
+  await expect(page.locator("html")).not.toHaveClass(/calm-mode/);
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await expect(
+    page.getByRole("button", { name: "Reduced motion", exact: false }),
+  ).toBeDisabled();
+});
+test("static artwork and navigation remain available with JavaScript disabled", async ({
+  browser,
+}) => {
+  const context = await browser.newContext({
+    javaScriptEnabled: false,
+    viewport: { width: 390, height: 844 },
+  });
+  const page = await context.newPage();
+  await page.goto("http://127.0.0.1:4173/");
+  await expect(page.locator(".neural-fallback")).toBeVisible();
+  await expect(page.locator(".sidebar")).toBeVisible();
+  await page
+    .locator(".sidebar")
+    .getByRole("link", { name: "Five things to know", exact: true })
+    .click();
+  await expect(page).toHaveURL(/top5.html/);
+  await context.close();
+});

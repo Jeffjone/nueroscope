@@ -1,4 +1,4 @@
-/* Keep navigation and answer content usable when JavaScript is disabled. */
+/* The publication, index, and references remain usable without JavaScript. */
 .search-trigger,
 [data-open-settings],
 .mobile-menu,
@@ -9,39 +9,68 @@
 .library-tools,
 .sticky-filters,
 .filter-tabs,
-.planner-actions {
+.planner-actions,
+.perspective-choices,
+.motion-toggle,
+.canvas-hint,
+.scenario-tabs,
+[data-access-toggle],
+.lab-instruction,
+.quick-check-answer > p,
+.quick-choices,
+#neural-canvas {
   display: none !important;
 }
-@media (max-width: 780px) {
-  .sidebar {
-    position: relative;
-    width: auto;
-    transform: none;
-    height: auto;
-    overflow: visible;
-    padding: 22px;
-  }
+.sidebar {
+  display: block;
+  position: relative;
+  inset: auto;
+  width: auto;
+  transform: none;
+  visibility: visible;
+  animation: none;
+  padding: 25px 6vw;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  overflow: visible;
+}
+.sidebar .brand,
+.sidebar-signoff {
+  display: none;
+}
+.sidebar-label {
+  margin: 0 0 20px;
+}
+.sidebar nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px 25px;
+}
+.nav-group {
+  margin: 0;
+}
+.sidebar nav a {
+  font-size: 0.8rem;
+}
+.sidebar-bottom {
+  padding-top: 0;
+}
+.sidebar-bottom > a {
+  margin-top: 15px;
+  font-size: 0.8rem;
+}
+.reveal-ready {
+  transform: none !important;
+}
+.voice-lines i,
+.orbit-dot {
+  animation: none !important;
+}
+@media (max-width: 700px) {
   .sidebar nav {
-    display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
   }
-  .sidebar-bottom {
-    padding-top: 10px;
-  }
-  .sidebar-signoff {
-    display: none;
-  }
-  .sidebar-label {
-    margin-bottom: 12px;
-  }
-  .nav-group {
-    margin-top: 0;
-  }
-  .sidebar-bottom > a {
-    margin-top: 10px;
-  }
-  .topbar {
-    display: none;
+  .sidebar nav a {
+    font-size: 0.7rem;
   }
 }

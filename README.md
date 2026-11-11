@@ -21,6 +21,9 @@ Open http://127.0.0.1:4173. The preview serves the repository root. Regenerate p
 - `scripts/build.mjs`: shared page shell, page templates, metadata, and generation of all ten HTML pages, search data, and sitemap.
 - `assets/styles.css`: responsive design, typography, focus styles, reduced-motion support, and print layout.
 - `assets/app.js`: local search, filters, quiz, reading progress, preferences, and checklist interactions.
+- `scripts/experience-template.mjs`: the full-width interactive homepage and chapter index.
+- `assets/experience.js`: the particle canvas, perspective lessons, inclusion explorer, and short knowledge check.
+- `assets/neural-geometry.js`: deterministic conceptual geometry shared by the animated canvas and the generated SVG fallback.
 
 Run `npm run build` and commit the generated root HTML and data files with their source changes. This keeps the existing `.html` URLs and supports direct static hosting without a build server. `CNAME` retains the existing `neuroscope.us` domain. Production hosting configuration is managed separately; this repository does not provision hosting or change DNS.
 
@@ -33,12 +36,12 @@ npm run check
 npm test
 ```
 
-`check` verifies headings, unique IDs, local links, assets, and search destinations. Browser tests cover all ten pages, WCAG A/AA automated checks through axe, keyboard interactions, phone/tablet/desktop widths, larger text, progress persistence, the full quiz, printable support selections, deferred video loading, and graceful failure when JavaScript, storage, or optional requests are unavailable. Automated accessibility checks do not replace testing with users and assistive technology.
+`check` verifies headings, unique IDs, local links, assets, and search destinations. Browser tests cover all ten pages, WCAG A/AA automated checks through axe, keyboard interactions, phone/tablet/desktop widths, larger text, progress persistence, the full quiz, perspective lessons, inclusion scenarios, motion controls, static artwork fallback, printable support selections, deferred video loading, and graceful failure when JavaScript, storage, or optional requests are unavailable. Automated accessibility checks do not replace testing with users and assistive technology.
 
 On macOS, browser tests use installed Google Chrome. On Linux, run `npx playwright install --with-deps chromium` first. GitHub Actions builds, checks generation consistency, and runs the browser suite for pushes and pull requests.
 
 ## Design and privacy
 
-The site uses a self-hosted Manrope font (SIL Open Font License in `assets/OFL-Manrope.txt`), system serif typography, original SVG artwork, and a light palette. No fonts, scripts, analytics, accounts, or search queries are sent to third-party services. Optional reading progress and display choices use browser local storage and can be reset on the About page. School checklist selections remain in page memory. YouTube privacy-enhanced embeds load only after a reader clicks play. Following external links contacts their respective providers.
+The site uses a self-hosted Manrope font (SIL Open Font License in `assets/OFL-Manrope.txt`), oversized sans-serif typography, original particle and SVG artwork, and a dark palette. The layout uses a horizontal header and an optional chapter drawer. Ambient canvas motion responds to the pointer, pauses offscreen or in a hidden tab, and respects system reduced-motion preferences. Readers can pause motion explicitly or enable Calm mode. The visualization is conceptual artwork; it does not encode anatomy, medical measurements, or regional brain activity. The inclusion explorer illustrates possible environmental adjustments rather than simulating a condition. No fonts, scripts, analytics, accounts, or search queries are sent to third-party services. Optional reading progress and display choices use browser local storage and can be reset on the About page. School checklist selections remain in page memory. YouTube privacy-enhanced embeds load only after a reader clicks play. Following external links contacts their respective providers.
 
-Regenerate the social preview with `node scripts/social.mjs` after changing the visual identity. Existing legacy image files remain available to preserve any incoming asset links; the new layout uses original vector artwork.
+Regenerate the social preview with `node scripts/social.mjs` after changing the visual identity. Existing legacy image files remain available to preserve any incoming asset links; the new layout uses original vector and canvas artwork.

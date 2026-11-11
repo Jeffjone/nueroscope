@@ -165,7 +165,7 @@
     sidebar = $("#sidebar"),
     overlay = $(".mobile-overlay");
   const mobileMedia = window.matchMedia("(max-width: 780px)");
-  sidebar.inert = mobileMedia.matches;
+  sidebar.inert = true;
   $(".mobile-nav-close").addEventListener("click", () => closeMenu(true));
   function closeMenu(restore = false) {
     if (!sidebar.classList.contains("open")) return;
@@ -174,7 +174,7 @@
     menuButton.setAttribute("aria-expanded", "false");
     document.body.style.overflow = "";
     $(".site-body").inert = false;
-    sidebar.inert = mobileMedia.matches;
+    sidebar.inert = true;
     if (restore) menuButton.focus();
   }
   menuButton.addEventListener("click", () => {
@@ -184,6 +184,7 @@
     menuButton.setAttribute("aria-expanded", "true");
     document.body.style.overflow = "hidden";
     $(".site-body").inert = true;
+    sidebar.getBoundingClientRect();
     $("a", sidebar).focus();
   });
   overlay.addEventListener("click", () => closeMenu(true));
@@ -208,7 +209,7 @@
   });
   mobileMedia.addEventListener("change", () => {
     closeMenu();
-    sidebar.inert = mobileMedia.matches;
+    sidebar.inert = true;
   });
 
   // Search is entirely local: downloaded once on demand, with token and typo matching.

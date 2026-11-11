@@ -17,7 +17,7 @@ jobs:
       - run: npm ci
       - run: npm run build
       - name: Ensure generated pages are committed
-        run: git diff --exit-code -- '*.html' assets/search-index.json assets/quiz.json sitemap.xml robots.txt
+        run: git diff --exit-code -- '*.html' assets/search-index.json assets/quiz.json assets/neural-poster.svg sitemap.xml robots.txt
       - run: npm run check
       - run: npx playwright install --with-deps chromium
       - run: npm test
